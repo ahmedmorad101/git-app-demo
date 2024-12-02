@@ -14,7 +14,7 @@ public class HomeController {
 
     @GetMapping
     @RequestMapping("/home")
-    public String home(){
-        return "Home Page";
+    public Person home(){
+        return Person.builder().name("Ahmed Mourad").age(43).build();
     }
 }
